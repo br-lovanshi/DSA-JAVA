@@ -1,3 +1,4 @@
+package String;
 // https://oj.masaischool.com/contest/3467/problem/11
 import java.io.*;
 import java.util.*;
