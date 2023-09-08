@@ -8,7 +8,8 @@ public class sumOfnNatural {
             sum += i;
         }
         System.out.println(sum);
-
         
+        sum = n(n+1)/2;
+
     }
 }
