@@ -7,6 +7,6 @@ $number = 10;
 $name = "PHP";
 $boolean = true;
 
-for(int $i ;$i <= 10; $i++){
+for( $i ;$i <= 10; $i++){
     echo $name;
 }
