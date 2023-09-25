@@ -9,6 +9,6 @@ public static void main(Sting[] args){
     String str2 = "Lovanshi";
     String str3 = str + str2;
 
-    System.out.println(str3);   
+    System.out.println(str3);
 }
 }
