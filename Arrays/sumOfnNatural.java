@@ -4,12 +4,14 @@ public class sumOfnNatural {
 
         int n = 5;
         int sum = 0;
-        for(int i = 0;i<n;i++){
+        for(int i = 1;i<=n;i++){
             sum += i;
         }
         System.out.println(sum);
         
-        sum = n(n+1)/2;
+        // formula
+        int sum1 = n * (n+1)/2;
+        System.out.println(sum1);
 
     }
 }
