@@ -1,12 +1,7 @@
-
 import java.io.*;
 import java.util.*;
-import java.util.stream.*;
-// import java.lang.*;
-import static java.util.stream.Collectors.toList;
 
-
-public class Main {
+public class AnagramDetector {
     
 
     	public static boolean subset(char[] st1,char[] st2){
