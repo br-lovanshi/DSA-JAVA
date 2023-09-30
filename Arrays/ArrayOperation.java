@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.List;
-
+// https://www.geeksforgeeks.org/searching-algorithms// visit for all array questions
 public class ArrayOperation {
 
 	 public static void findMin(int[] nums) {
