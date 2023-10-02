@@ -7,7 +7,7 @@ public class HashMap1 {
     public static void main(String[] args) {
         Map<Integer, Integer> map = new HashMap<>();
 
-        int[] array = { 3, 2, 3 };
+        int[] array = { 3, 2, 3, 2, 3 };
 
         for (int i = 0; i < array.length; i++) {
 
@@ -16,13 +16,15 @@ public class HashMap1 {
             } else
                 map.put(array[i], 1);
         }
+        int max = -1;
+        int maxOccurence = 0;
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int max = -1;
             if (entry.getValue() > max) {
-                max = entry.getKey();
+                max = entry.getValue();
+                maxOccurence = entry.getKey();
             }
-            System.out.println(max);
         }
+        System.out.println(maxOccurence);
     }
 
 }
