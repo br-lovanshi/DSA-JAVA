@@ -1,4 +1,4 @@
-public class Print2DArray {
+ public class Print2DArray {
     
     public static void main(String[] args) {
         
