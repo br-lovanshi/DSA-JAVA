@@ -26,25 +26,17 @@ public class MissingInteger {
 	}
 	// o(n)
 	public static void missingint1(int arr[], int n){
-		n = n+1;
-		int sumOfN = n*(n+1)/2;
-		int sum = 0;
-		for(int i =0;i<n-1;i++){
-			sum += arr[i];
-		}
-		System.out.println(sumOfN - sum);
+		int sum = ((n + 1) * (n + 2)) / 2;
+        for (int i = 0; i < n; i++)
+            sum -= arr[i];
+        
+		System.out.println("The missing integer is: " + sum);
 	}
 	public static void main(String[] args) throws IOException {
 
-		// BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		// int[] array = Arrays.stream(bf.readLine().replaceAll(" ", "").split(" ")).
-		// mapToInt(Integer::parseInt).toArray();
-
-		int arr[] = { 1, 2, 3, 4,6,7,8};
-		int n = 7;
+		int arr[] = {1,3,1};
+		int n = 3;
 		missingint1(arr, n);
-
-		// bf.close();
 	}
 
 }
