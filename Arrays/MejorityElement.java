@@ -8,24 +8,34 @@ public class MejorityElement {
 
         Map<Integer, Integer> map = new HashMap<>();
         // add nums ele in the map
-        for (int i = 0; i < nums.length; i++) {
+        // for (int i = 0; i < nums.length; i++) {
 
-            if (map.containsKey(nums[i])) {
-                map.put(nums[i], map.get(nums[i] + 1));
-            } else
-                map.put(nums[i], 1);
+        //     if (map.containsKey(nums[i])) {
+        //         map.put(nums[i], map.get(nums[i] + 1));
+        //     } else
+        //         map.put(nums[i], 1);
+        // }
+        for(int i :nums){
+            map.put(i,map.getOrDefault(i,0)+1);
         }
-        int max = 0;
-        // for(Map.entry(Integer, Integer) entry : map.entrySet()){
-            
+        int maxValue = nums.length/2;
+        int maxkey = 0;
+        for(Map.Entry<Integer,Integer> entry:map.entrySet()){
+            if(maxValue < entry.getValue()){
+                maxValue = entry.getValue();
+                maxkey = entry.getKey();
+            }
         }
-
-         
+        if(maxValue != nums.length/2)
+        System.out.println(maxkey);
+        else
+        System.out.println("No mejority element found");
+                    
     }
 
     public static void main(String[] args) {
 
-        int[] arr = { 1, 2, 3, 5, 2, 2, 22, 6, 7 };
+        int[] arr = { 1, 2, 5, 2,2,2,2,2, 6, 7 };
         mejorityElementFind(arr);
 
     }
