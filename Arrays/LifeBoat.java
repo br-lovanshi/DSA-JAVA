@@ -1,26 +1,13 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
 import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     * Complete the 'plusMinus' function below.
-     *
-     * The function accepts INTEGER_ARRAY arr as parameter.
-     */
 
     public static void subset(int n ,int k ,List<Integer> list) {
-    // Write your code here
-    
+     
     int c = 0;
     int i = 0;
     int j = n-1;
@@ -49,7 +36,7 @@ class Result {
 
 }
 
-public class Main {
+public class LifeBoat {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
