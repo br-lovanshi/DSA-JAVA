@@ -10,7 +10,7 @@ class firstUniqChar {
            letters.add(i);
 
            if(hasSet.contains(i)) letters.remove(i);
-           hasSet.add(i);
+            
 
        }
            if(hasSet.isEmpty()) return -1;
