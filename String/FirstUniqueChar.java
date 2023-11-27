@@ -28,5 +28,6 @@ class firstUniqChar {
         String str = "Hello World";
         int ans = solution(str);
         System.out.println(ans);
+        System.out.println();
     }
 }
