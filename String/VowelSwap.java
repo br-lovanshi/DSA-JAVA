@@ -5,14 +5,14 @@ public class VowelSwap {
         char[] word = str.toCharArray();
         String vowel = "AEIOUaeiou";
 
-       int left = 0, right = str.length()-1;
+       int left = 0, right = word.length-1;
 
         while(left < right){
 
-            while(left < right && vowel.indexOf(left) == -1){
+            while(left < right && vowel.indexOf(word[left]) == -1){
                 left++;
             }
-            while(left < right && vowel.indexOf(right) == -1){
+            while(left < right && vowel.indexOf(word[right]) == -1){
                 right--;
             }
 
@@ -30,7 +30,7 @@ public class VowelSwap {
     }
     public static void main(String[] args) {
         
-        String str = "hello";
+        String str = "holle";
 
         System.out.println(swapVowel(str));
     }
