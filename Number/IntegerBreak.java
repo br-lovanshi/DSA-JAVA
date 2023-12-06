@@ -9,8 +9,8 @@ public class IntegerBreak {
     }
     public static void main(String[] args) {
         int n = 2;
-        int mod = 2% 3;
-        int divide = 2/3;
+        int mod = 4% 7;
+        int divide = 4/7;
         System.out.println(mod + " " + divide + " " + (int) Math.pow(3,divide)*2);
         // int ans = intBreak(n);
     }
