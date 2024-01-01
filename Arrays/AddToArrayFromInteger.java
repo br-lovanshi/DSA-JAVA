@@ -18,7 +18,6 @@ public class AddToArrayFromInteger {
 
     }
     public static void main(String[] args) {
-        
         int[] array = {1,2,0,0 };
         int k = 34;
         solution(array, k);

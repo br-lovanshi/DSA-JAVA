@@ -3,8 +3,8 @@ import java.util.List;
 
 public class ArrayIndexOutOfBound {
     public static void main(String[] args) {
-        int year= 1900;
-        int testYear = 1900;
+        int year= 2023;
+        int testYear = 2024;
         List<Integer> dropdown = new ArrayList<>();
         for(int i = 1;i<=124;i++){
             dropdown.add(year++);
