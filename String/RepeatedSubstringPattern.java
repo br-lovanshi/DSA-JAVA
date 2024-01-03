@@ -12,3 +12,5 @@ public class RepeatedSubstringPattern{
         System.out.println(findSubString(str));
     }
 }
+
+// https://leetcode.com/submissions/detail/1135842084/
