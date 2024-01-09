@@ -28,3 +28,4 @@ List<Character> list = new ArrayList<>();
 
 }
 // Write a program in java to find a duplicate character.
+// https://onurdesk.com/top-11-program-in-java-to-find/
