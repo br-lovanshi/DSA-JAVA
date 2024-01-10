@@ -20,7 +20,7 @@ List<Character> list = new ArrayList<>();
         return list;
     }
     public static void main(String[] args) {
-        String str = "Helloo";
+        String str = "Hello";
         List<Character> output = findDuplicateCharacter(str);
         System.out.println(output);
 
