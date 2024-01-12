@@ -20,12 +20,13 @@ List<Character> list = new ArrayList<>();
         return list;
     }
     public static void main(String[] args) {
-        String str = "Hello";
+        String str = "Hello" ;
         List<Character> output = findDuplicateCharacter(str);
         System.out.println(output);
 
     }
 
 }
+
 // Write a program in java to find a duplicate character.
 // https://onurdesk.com/top-11-program-in-java-to-find/
