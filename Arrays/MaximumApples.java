@@ -5,11 +5,12 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    public static void subset(int n, int k, List<Integer> list) {
+    public static void subset(int n, List<Integer> list) {
         // Write your code here
         Collections.sort(list);
         int c = 0;
         int sum = 0;
+        int k = 0;
         for (int i = 0; i < n; i++) {
 
             sum += list.get(i);
@@ -36,7 +37,7 @@ public class MaximumApples {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        Result.subset(len.get(0), len.get(1), arr);
+        Result.subset(len.get(0), arr);
 
         bufferedReader.close();
     }
