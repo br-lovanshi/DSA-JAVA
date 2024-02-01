@@ -9,7 +9,7 @@ public class Searching {
         for(int i = 0;i<=slogenLen-wordLen;i++){
             boolean flag = true;
             for(int j = 0;j<wordLen;j++){
-             if(slogen.chartAt(i+j)!= word.charAt(j))){
+             if(slogen.charAt(i+j)!= word.charAt(j)){
 
                  flag = false;
                  break;
