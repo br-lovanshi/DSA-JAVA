@@ -18,14 +18,14 @@ public class IntersectionOfTwoArray {
         }
 
         // convert set to the int array
-        int[] output = new int[resultSet.size()];
+        int[] ansArray = new int[resultSet.size()];
         int ind = 0;
         for(int i : resultSet){
-            output.add(i);
+            ansArray[ind] = i;
             ind++;
         }
 
-        return output;
+        return ansArray;
     }
     public static void main(String[] args) {
         int[] nums1 = {1,2,3,4,5,6,3,2};

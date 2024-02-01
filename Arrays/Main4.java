@@ -13,7 +13,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Result {
+class Result4 {
 
     /*
      * Complete the 'plusMinus' function below.
@@ -70,7 +70,7 @@ public static int giveSum(int n){
 
 }
 
-public class Main {
+public class Main4 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 

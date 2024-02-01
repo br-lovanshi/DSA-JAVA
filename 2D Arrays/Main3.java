@@ -6,7 +6,7 @@ import java.lang.*;
 import static java.util.stream.Collectors.toList;
 
 
-public class Main {
+public class Main3 {
     
 	public static void subset(int n,int m,int[][] arr ){
 	   

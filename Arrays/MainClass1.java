@@ -5,7 +5,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.toList;
 
 
-public class Main {
+public class MainClass1 {
     
 	public static void subset(int n ,int[] arr) {
    	//   System.out.println(n+" " + list);
