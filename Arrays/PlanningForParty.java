@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
- class MinimumExpense {
+ class MinimumExpense1 {
     
 	public static void subset(int n1 ,int[] arr1, int n2 ,int[] arr2) {
    	//   System.out.println(n1+" " + arr1);
