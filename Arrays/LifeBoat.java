@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.toList;
 
-class Result {
+class Result5 {
 
 
     public static void subset(int n ,int k ,List<Integer> list) {
@@ -15,6 +15,7 @@ class Result {
     while(i<j){
         int sum = list.get(i) + list.get(j);
         if(sum <=k){
+
             c++;
             i++;
             j--;
@@ -51,7 +52,7 @@ for(int t = 0;t<tc;t++){
             .map(Integer::parseInt)
             .collect(toList());
 
-        Result.subset(len.get(0),len.get(1),arr);
+        Result5.subset(len.get(0), 1,arr);
 }
         bufferedReader.close();
     }
