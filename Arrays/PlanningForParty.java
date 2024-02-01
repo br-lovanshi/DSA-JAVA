@@ -1,15 +1,8 @@
-//Enter code here
 
-//Enter code here
-
-//Enter code here
 import java.io.*;
 import java.util.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.toList;
 
-
-public class Main {
+ class MinimumExpense {
     
 	public static void subset(int n1 ,int[] arr1, int n2 ,int[] arr2) {
    	//   System.out.println(n1+" " + arr1);
