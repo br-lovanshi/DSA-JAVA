@@ -44,3 +44,5 @@ public class LinerSearch {
         System.out.println(binarySearch);
     }
 }
+
+//https://www.geeksforgeeks.org/binary-search/?ref=lbp
