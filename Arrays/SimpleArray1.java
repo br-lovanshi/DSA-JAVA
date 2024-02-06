@@ -10,7 +10,8 @@ public class SimpleArray1 {
         boolean[] booleanArray = new boolean[4];
         booleanArray[2] = true;
         for(boolean i : booleanArray){
-            if(i == true){
+            i = true;
+            if(i){
                 System.out.println("Hello Wolrd!");
             }
         }
