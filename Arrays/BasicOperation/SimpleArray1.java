@@ -1,5 +1,4 @@
 package BasicOperation;
-import java.util.Arrays;
 
 public class SimpleArray1 {
     public static void main(String[] args) {
