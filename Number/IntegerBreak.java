@@ -1,3 +1,4 @@
+package Number;
 public class IntegerBreak {
     public static int intBreak(int n){
         if(n <2) return -1;
