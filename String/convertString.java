@@ -1,7 +1,5 @@
 package String;
 
-import java.util.Arrays;
-
 public class convertString{
 
     public static void main(String[] args) {
