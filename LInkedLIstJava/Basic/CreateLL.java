@@ -12,10 +12,10 @@ class Node {
 
 }
 
-class LinkedList1 {
+class LinkedList11 {
     Node head;
 
-    public LinkedList1(){
+    public LinkedList11(){
         this.head = null;
     }
 
@@ -33,7 +33,7 @@ class LinkedList1 {
 public class CreateLL {
     
     public static void main(String[] args) {
-        LinkedList1 list = new LinkedList1();
+        LinkedList11 list = new LinkedList11();
         // list.insertion(1);
         list.insertion(2);
         
