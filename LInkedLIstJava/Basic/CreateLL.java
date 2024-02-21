@@ -12,10 +12,10 @@ class Node {
 
 }
 
-class LinkedList1 {
+class LinkedList11 {
     Node head;
 
-    public LinkedList1(){
+    public LinkedList11(){
         this.head = null;
     }
 
@@ -177,14 +177,17 @@ class LinkedList1 {
 public class CreateLL {
     
     public static void main(String[] args) {
+        LinkedList11 list = new LinkedList11();
+        // list.insertion(1);
+        // list.insertion(2);
         
-        LinkedList1 list = new LinkedList1();
+        // LinkedList1 list = new LinkedList1();
         
-        list.insertAtLast(1);
-        list.insertAtLast(2);
-        list.insertAtLast(3);
-        list.insertAtLast(4);
-        list.insertAtLast(5);
+        // list.insertAtLast(1);
+        // list.insertAtLast(2);
+        // list.insertAtLast(3);
+        // list.insertAtLast(4);
+        // list.insertAtLast(5);
 
         // list.printList();
         // list.insertAtSpecificIndex(2, 10);
