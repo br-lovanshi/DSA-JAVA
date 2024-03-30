@@ -18,7 +18,7 @@ public class findSecondMin{
 		return secondMin;
 	}
 	public static void main(String args[]){
-		int[] nums = {2,5,1,2,0,6,7};
+		int[] nums = {2,5,1,2,6,7};
 		int output = findSecondMinNumber(nums);
 		System.out.println(output);
 	}
