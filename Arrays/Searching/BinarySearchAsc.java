@@ -1,9 +1,9 @@
-// asce sorted array find the target else return -1;
+// asce sorted array find the target ele
 
 public class BinarySearchAsc{
 	public static void main(String[] args){
 		int[] arr = {1,2,3,4,5,6};
-		int target  = 10;
+		int target  = 1;
 		
 		int output = binarySearch(arr, target);
 		System.out.println(output);
