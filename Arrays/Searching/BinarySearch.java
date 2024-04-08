@@ -2,7 +2,6 @@ package Searching;
 
 import java.util.Arrays;
 
-import Problems.sumOfnNatural;
 
 public class BinarySearch {
 
@@ -62,10 +61,13 @@ public class BinarySearch {
 
         // itrative way
         findKItrative(arr, n,k);
-        
+
         // recursive way
         boolean output = findKRecursive(arr, k, 0, n-1);
         System.out.println(output);
     }
     
 }
+
+
+// https://www.geeksforgeeks.org/searching-algorithms/
