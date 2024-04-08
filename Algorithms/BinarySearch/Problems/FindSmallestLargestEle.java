@@ -1,4 +1,4 @@
-package Searching;
+package Problems;
 
 public class FindSmallestLargestEle {
     public static void main(String[] args) {

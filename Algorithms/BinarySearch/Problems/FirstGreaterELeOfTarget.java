@@ -1,4 +1,4 @@
-package Searching;
+package Problems;
 
 public class FirstGreaterELeOfTarget {
     public static void main(String[] args) {
