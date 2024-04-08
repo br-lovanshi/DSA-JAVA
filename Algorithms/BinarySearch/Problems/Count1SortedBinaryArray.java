@@ -1,4 +1,4 @@
-package Searching;
+package Problems;
 
 public class Count1SortedBinaryArray {
     
