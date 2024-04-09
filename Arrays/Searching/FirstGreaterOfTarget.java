@@ -44,7 +44,6 @@ public class FirstGreaterOfTarget {
 				}
 			}
 		}
-
 		return output;
 	}
 }
