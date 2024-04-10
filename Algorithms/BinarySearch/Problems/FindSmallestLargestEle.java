@@ -1,4 +1,4 @@
-package Problems;
+package Algorithms.BinarySearch.Problems;
 
 public class FindSmallestLargestEle {
     public static void main(String[] args) {
@@ -29,9 +29,7 @@ public class FindSmallestLargestEle {
             if(nums[m] < target){
                 low = m+1;
             }
-
         }
-
         return -1;
     }
 }
