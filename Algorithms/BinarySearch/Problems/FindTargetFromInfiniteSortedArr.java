@@ -15,7 +15,9 @@ public class FindTargetFromInfiniteSortedArr {
             low = high;
             high = 2 * high;
         }
-        int output = binarySearch(arr, low, high, target);
+        int output = 0;
+
+
         System.out.println(output);
     }
 

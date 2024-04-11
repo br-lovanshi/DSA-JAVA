@@ -1,15 +1,29 @@
-package Problems;
-
+package Algorithms.BinarySearch.Problems;
 public class PositiveIntegerCount {
     
     public static void main(String[] args) {
         
         int[] nums = {-10,-4,-1,-1,-1,0,0,4,6,8,9};
-        int output = binarySearch(nums);
+        int output = binarySearchCeil(nums,9);
         System.out.println(output);
     }
 
-    public static int binarySearch(int[] nums){
+    public static int binarySearchCeil(int[] nums, int target) {
+        int low = 0, high = nums.length - 1;
+        int ans = 0;
+
+
+        while(low < high){
+            int mid = low + (high-low)/2;
+
+            if(nums[mid] > target) high = mid-1;
+            else low = mid+1;
+
+        }
+
+        return low;
+    }
+        public static int binarySearch(int[] nums){
         int low = 0, high = nums.length-1;
         int ans = 0;
 
