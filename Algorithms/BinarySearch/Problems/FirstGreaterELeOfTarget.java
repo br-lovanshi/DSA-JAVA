@@ -5,7 +5,7 @@ public class FirstGreaterELeOfTarget {
 
         int[] arr = {3,4,5,6,7,7,7,7,8,9,24,50};
         int target = 7;
-        int output = arch(abinarySerr,target);
+        int output = binarySearch(arr,target);
         System.out.println(output);
     }
 
