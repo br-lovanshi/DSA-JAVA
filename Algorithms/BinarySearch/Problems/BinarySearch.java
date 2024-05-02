@@ -8,6 +8,7 @@ public class BinarySearch {
     public static void findKItrative(int[] arr, int n, int k){
 
         int l = 0;
+
         int h = n-1;
 
         while(l<=h){
