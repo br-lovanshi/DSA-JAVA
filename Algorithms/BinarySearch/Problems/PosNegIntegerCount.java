@@ -1,7 +1,28 @@
- package Problems;
+package Algorithms.BinarySearch.Problems;
 
 public class PosNegIntegerCount {
+    public static  int negCount1(int[] nums){
 
+        int low = 0, high = nums.length-1, ans = 0;
+        if(nums[low] > 0) return 0;
+        if(nums[high] < 0) return nums.length;
+
+        while(low < high){
+
+            int mid = low + (high-low)/2;
+
+            if(nums[mid] < 0){
+                ans = mid;
+                low = mid+1;
+            }else if(nums[mid] > 0){
+                high = mid-1;
+            }else{
+                low = mid+1;
+            }
+        }
+
+        return ans+1;
+    }
     public static void main(String[] args) {
         
         int[] nums = {-10,-1,0,0,0,0,0,0,9};
