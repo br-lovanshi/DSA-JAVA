@@ -4,13 +4,13 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/2D Arrays" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Arrays" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/InputTaking" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/InputTaking2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Map" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/String" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/boilerPlateCode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/matrix" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

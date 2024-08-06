@@ -1,11 +1,8 @@
 import java.io.*;
 import java.util.*;
-import java.util.stream.*;
-
-import static java.util.stream.Collectors.toList;
 // https://oj.masaischool.com/contest/5098/problem/10
 
-public class Main2 {
+public class SumOfBoundary {
 
     public static void subset(int[][] arr) {
 

@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
-public class transposeMatrix{
+public class TransposeMatrix {
 
-public static int[][] transponse(int[][]mat){
+public static int[][] transpose(int[][]mat){
     int[][]arr = new int[mat[0].length][mat.length];
 
     for(int i = 0;i<mat.length;i++){
@@ -22,6 +22,6 @@ public static int[][] transponse(int[][]mat){
             }
         }
 
-        System.out.println(Arrays.toString(transponse(matrix)));
+        System.out.println(Arrays.toString(transpose(matrix)));
     }
 }
