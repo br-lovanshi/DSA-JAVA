@@ -29,12 +29,13 @@ public class CustomLL {
         }
         size++;
     }
-    public void insert(int data, int index){
-        if(index == 0) insertFirst(data);
-        if(index == size) insertEnd(data);
+
+    public void insert(int data, int index) {
+        if (index == 0) insertFirst(data);
+        if (index == size) insertEnd(data);
 
         Node curr = head;
-        for(int i = 1; i<index; i++){
+        for (int i = 1; i < index; i++) {
             curr = curr.next;
         }
 
@@ -42,12 +43,33 @@ public class CustomLL {
         newNode.next = curr.next;
         curr.next = newNode;
     }
+
     public void insertEnd(int data) {
         if (this.tail == null) insertFirst(data);
         Node newNode = new Node(data);
         this.tail.next = newNode;
         tail = newNode;
         size++;
+    }
+
+    public int deleteFirst() {
+        int data = head.data;
+        head = head.next;
+        if (head == null) {
+            tail = null;
+        }
+        size--;
+        return data;
+    }
+
+    public int findMiddleEle() {
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow.data;
     }
 
     public void print() {
@@ -71,7 +93,10 @@ class Main {
         ll.insertEnd(5);
         ll.print();
         System.out.println(ll.size);
-        ll.insert(100,2);
+        ll.insert(100, 2);
         ll.print();
+        ll.deleteFirst();
+        ll.print();
+        System.out.println(ll.findMiddleEle());
     }
 }
