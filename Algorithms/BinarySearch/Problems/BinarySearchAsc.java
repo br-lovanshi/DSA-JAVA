@@ -1,4 +1,4 @@
-package Problems;
+package Algorithms.BinarySearch.Problems;
 // asce sorted array find the target ele
 
 public class BinarySearchAsc{

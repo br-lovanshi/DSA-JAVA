@@ -1,4 +1,4 @@
-package Problems;
+package Algorithms.BinarySearch.Problems;
 
 public class FindTargetFromInfiniteSortedArr {
     

@@ -1,11 +1,11 @@
 package LInkedLIstJava.Basic;
 
 
-class Node {
+ class Node {
     int data;
     Node next;
 
-    Node(int data){
+    Node(int data) {
         this.data = data;
         this.next = null;
     }
@@ -15,12 +15,12 @@ class Node {
 class LinkedList11 {
     Node head;
 
-    public LinkedList11(){
+    public LinkedList11() {
         this.head = null;
     }
 
     // add ele at the first index of list
-    public void insertAtFirst(int data){
+    public void insertAtFirst(int data) {
 
         Node currentNode = new Node(data);
 
@@ -29,55 +29,56 @@ class LinkedList11 {
 
     }
 
-    public void insertAtSpecificIndex(int position, int data){
+    public void insertAtSpecificIndex(int position, int data) {
         Node newNode = new Node(data);
 
         // if position is 0
-        if(position == 0){
+        if (position == 0) {
             newNode.next = head;
             head = newNode;
             return;
         }
 
-        Node currNode = head.next,prevNode = head;
+        Node currNode = head.next, prevNode = head;
         int currPosition = 1;
 
-        while(currNode != null && currPosition != position){
+        while (currNode != null && currPosition != position) {
             prevNode = currNode;
             currNode = currNode.next;
             currPosition++;
         }
 
-        if(currNode == null) return;
+        if (currNode == null) return;
 
         newNode.next = currNode;
         prevNode.next = newNode;
-        
+
     }
+
     // insert at the last position
-    public void insertAtLast(int data){
+    public void insertAtLast(int data) {
         Node newNode = new Node(data);
-        
+
         Node currentNode = head;
-        if(currentNode == null){
+        if (currentNode == null) {
             currentNode = newNode;
-            currentNode.next =head;
+            currentNode.next = head;
             head = currentNode;
             return;
         }
 
-        while(currentNode.next != null){
+        while (currentNode.next != null) {
             currentNode = currentNode.next;
         }
         currentNode.next = newNode;
     }
 
     // print all the element of the list
-    public void printList(){
+    public void printList() {
 
         Node currNode = head;
 
-        while(currNode != null){
+        while (currNode != null) {
             System.out.print(currNode.data + " ");
             currNode = currNode.next;
         }
@@ -85,63 +86,63 @@ class LinkedList11 {
     }
 
     // delete ele of same value
-    public void delete(int key){
+    public void delete(int key) {
         Node currNode = head;
 
         // if key found at first position
-        if(currNode != null && currNode.data == key){
+        if (currNode != null && currNode.data == key) {
             head = currNode.next;
             return;
         }
 
         Node prevNode = null;
 
-        while(currNode != null && currNode.data != key){
+        while (currNode != null && currNode.data != key) {
             prevNode = currNode;
             currNode = currNode.next;
         }
 
-        if(currNode == null) return;
+        if (currNode == null) return;
 
         prevNode.next = currNode.next;
     }
 
     // delete element from specific position
-    public void deleteByPosition(int position){
+    public void deleteByPosition(int position) {
 
-        if(position == 0){
+        if (position == 0) {
             head = head.next;
             return;
         }
-        
+
         Node currNode = head.next;
         Node prevNode = head;
 
         int currPosition = 1;
-        
-        while(currNode != null && currPosition != position){
+
+        while (currNode != null && currPosition != position) {
             prevNode = currNode;
             currNode = currNode.next;
             currPosition++;
         }
-        if(currNode == null )return;
+        if (currNode == null) return;
 
-        if(currPosition == position){
+        if (currPosition == position) {
             prevNode.next = currNode.next;
         }
     }
 
-    public void update(int oldData, int newData){
+    public void update(int oldData, int newData) {
 
         Node currNode = head;
 
-        if(currNode != null && currNode.data == oldData){
+        if (currNode != null && currNode.data == oldData) {
             currNode.data = newData;
             return;
         }
 
-        while(currNode != null){
-            if(currNode.data == oldData){
+        while (currNode != null) {
+            if (currNode.data == oldData) {
                 currNode.data = newData;
                 return;
             }
@@ -157,32 +158,33 @@ class LinkedList11 {
         // currNode.data = newData;
     }
 
-    public void reverse(){
+    public void reverse() {
         Node curr = head;
         Node prev = null;
         Node next = null;
 
-        while(curr != null){
+        while (curr != null) {
 
             next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
-            
+
         }
 
         head = prev;
     }
 }
+
 public class CreateLL {
-    
+
     public static void main(String[] args) {
         LinkedList11 list = new LinkedList11();
         // list.insertion(1);
         // list.insertion(2);
-        
+
         // LinkedList1 list = new LinkedList1();
-        
+
         // list.insertAtLast(1);
         // list.insertAtLast(2);
         // list.insertAtLast(3);
@@ -191,7 +193,7 @@ public class CreateLL {
 
         // list.printList();
         // list.insertAtSpecificIndex(2, 10);
-        
+
         // list.printList();
         // list.delete(3);
         // list.deleteByPosition(0);

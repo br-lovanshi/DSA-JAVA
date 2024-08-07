@@ -1,4 +1,4 @@
-package Problems;
+package Algorithms.BinarySearch.Problems;
 /*Given a sorted array find the first greater ele of target if not found return -1
 find ceil element of target
 

@@ -1,3 +1,4 @@
+package Algorithms.BinarySearch;
 
 public class OrderIgnosticBinarySearch{
 

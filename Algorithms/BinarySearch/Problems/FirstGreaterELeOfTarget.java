@@ -1,4 +1,4 @@
-package Problems;
+package Algorithms.BinarySearch.Problems;
 
 public class FirstGreaterELeOfTarget {
     public static void main(String[] args) {

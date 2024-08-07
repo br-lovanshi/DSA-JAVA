@@ -1,0 +1,77 @@
+package LInkedLIstJava.Basic;
+
+public class CustomLL {
+    private Node head;
+    private Node tail;
+    int size;
+
+    CustomLL() {
+        this.size = 0;
+    }
+
+    private class Node {
+        private int data;
+        private Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    //    insert at first position
+    public void insertFirst(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+        if (this.tail == null) {
+            tail = newNode;
+        }
+        size++;
+    }
+    public void insert(int data, int index){
+        if(index == 0) insertFirst(data);
+        if(index == size) insertEnd(data);
+
+        Node curr = head;
+        for(int i = 1; i<index; i++){
+            curr = curr.next;
+        }
+
+        Node newNode = new Node(data);
+        newNode.next = curr.next;
+        curr.next = newNode;
+    }
+    public void insertEnd(int data) {
+        if (this.tail == null) insertFirst(data);
+        Node newNode = new Node(data);
+        this.tail.next = newNode;
+        tail = newNode;
+        size++;
+    }
+
+    public void print() {
+        Node curr = head;
+        while (curr != null) {
+            System.out.print(curr.data + "->");
+            curr = curr.next;
+        }
+        System.out.println("End");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        CustomLL ll = new CustomLL();
+        ll.insertFirst(1);
+        ll.insertFirst(2);
+        ll.insertFirst(3);
+        ll.print();
+        ll.insertEnd(4);
+        ll.insertEnd(5);
+        ll.print();
+        System.out.println(ll.size);
+        ll.insert(100,2);
+        ll.print();
+    }
+}
