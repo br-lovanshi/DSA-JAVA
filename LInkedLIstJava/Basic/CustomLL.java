@@ -61,6 +61,33 @@ public class CustomLL {
         size--;
         return data;
     }
+    public int delete(int index){
+        if(index == 0) return deleteFirst();
+        if(index == size-1) return deleteLast();
+        Node prev = get(index-1);
+        int value = prev.next.data;
+        prev.next = prev.next.next;
+        return value;
+    }
+    public int deleteLast() {
+        if (size <= 1) {
+            deleteFirst();
+        }
+        Node curr = head;
+        Node secondLast = get(size - 2);
+        int data = tail.data;
+        tail = secondLast;
+        tail.next = null;
+        return data;
+    }
+
+    public Node get(int index) {
+        Node curr = head;
+        for (int i = 0; i < index; i++) {
+            curr = curr.next;
+        }
+        return curr;
+    }
 
     public int findMiddleEle() {
         Node slow = head;
@@ -92,11 +119,15 @@ class Main {
         ll.insertEnd(4);
         ll.insertEnd(5);
         ll.print();
-        System.out.println(ll.size);
-        ll.insert(100, 2);
+//        System.out.println(ll.size);
+//        ll.insert(100, 2);
+//        ll.print();
+//        ll.deleteFirst();
+//        ll.print();
+//        System.out.println(ll.findMiddleEle());
+        ll.deleteLast();
         ll.print();
-        ll.deleteFirst();
+        System.out.println(ll.delete(2));
         ll.print();
-        System.out.println(ll.findMiddleEle());
     }
 }
