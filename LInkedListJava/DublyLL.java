@@ -1,4 +1,4 @@
-package LInkedLIstJava;
+package LInkedListJava;
 
 public class DublyLL {
 

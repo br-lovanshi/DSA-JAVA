@@ -1,6 +1,6 @@
 //https://oj.masaischool.com/contest/4896/problems
 
-package LInkedLIstJava;
+package LInkedListJava;
 
 public class LLJava {
 

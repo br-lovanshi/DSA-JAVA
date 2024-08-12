@@ -1,4 +1,4 @@
-package LInkedLIstJava.Basic;
+package LInkedListJava.Basic;
 
 class Node1 {
     int data;

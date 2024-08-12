@@ -1,4 +1,4 @@
-package LInkedLIstJava.Basic;
+package LInkedListJava.Basic;
 
 public class CustomLL {
     private Node head;
@@ -73,7 +73,7 @@ public class CustomLL {
         if (size <= 1) {
             deleteFirst();
         }
-        Node curr = head;
+
         Node secondLast = get(size - 2);
         int data = tail.data;
         tail = secondLast;
