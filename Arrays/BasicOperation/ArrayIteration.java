@@ -1,4 +1,8 @@
 package BasicOperation;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArrayIteration {
 
     public static void main(String[] args) {
@@ -30,6 +34,14 @@ public class ArrayIteration {
 
         return true;
     }
+    public List<Integer> someFUn(final List<Integer> numbers ){
+        List<Integer> resulet = new ArrayList<>();
+        for(int i = numbers.size()-1; i>=0; i--){
+            resulet.add(numbers.get(i));
+        }
+        return resulet;
+    }
 }
+
 
 // given an array store only prime numbers and retrive the array

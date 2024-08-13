@@ -1,36 +1,39 @@
-package LInkedLIstJava.Basic;
+package LInkedListJava.Basic;
 
-class Node1{
-     int data;
+class Node1 {
+    int data;
     Node1 next;
 
-    Node1(int data){
+    Node1(int data) {
         this.data = data;
         this.next = null;
     }
 }
-class LinkedListOperation{
+
+class LinkedListOperation {
 
     Node1 head;
-    LinkedListOperation(){
+
+    LinkedListOperation() {
         this.head = null;
     }
-    public void insertion(int data){
+
+    public void insertion(int data) {
         Node1 currNode = new Node1(data);
         currNode.next = head;
         head = currNode;
         System.out.println(head.data);
     }
 
-    public void delete(int data){
+    public void delete(int data) {
         Node1 prev = null;
         Node1 curr = head;
 
-        if(curr.data == data){
+        if (curr.data == data) {
             head = curr.next;
         }
 
-        while (curr.data != data){
+        while (curr.data != data) {
             prev = curr;
             curr = curr.next;
         }
@@ -39,10 +42,11 @@ class LinkedListOperation{
 
     }
 }
+
 public class LinkedList1 {
 
     public static void main(String[] args) {
-    LinkedListOperation linkedList = new LinkedListOperation();
+        LinkedListOperation linkedList = new LinkedListOperation();
 
         linkedList.insertion(10);
         linkedList.insertion(20);

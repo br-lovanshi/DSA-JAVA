@@ -1,4 +1,4 @@
-package Problems;
+package Algorithms.BinarySearch.Problems;
 /*Find the target ele in desc sorted array return index else -1*/
 
 public class BinarySearchDesc{
